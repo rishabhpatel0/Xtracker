@@ -1,0 +1,66 @@
+/* Add these CSS styles to your App.css file or inside the style block */
+
+/* Default styles for desktop */
+.top-expense {
+  flex: 0 0 60%; /* Takes 60% of the width */
+}
+
+.recent-transactions {
+  flex: 0 0 40%; /* Takes 40% of the width */
+}
+
+/* Flex container for recent transactions and top expense */
+.expense-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; /* Ensures they stay in one row on larger screens */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Stack the elements vertically */
+  .expense-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .expense-card,
+  .chart-card,
+  .transaction-card {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Adjust button size and other elements for mobile */
+  .expense-card button,
+  .chart-card button,
+  .transaction-card button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .expense-container {
+    flex-direction: column; /* Stack the items vertically */
+  }
+
+  .top-expense,
+  .recent-transactions {
+    flex: 0 0 100%; /* Both take full width on mobile */
+  }
+}
+
+/* Optional: add padding or margins for smaller screens */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.5em; /* Smaller font size for header */
+  }
+
+  h4 {
+    font-size: 1.2em; /* Smaller font size for subheaders */
+  }
+
+  .expense-wrapper {
+    padding: 10px; /* Reduce padding for mobile */
+  }
+}
