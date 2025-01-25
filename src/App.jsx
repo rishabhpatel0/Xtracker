@@ -65,9 +65,9 @@ function App() {
 
   return (
     <div>
-      <h3 style={{ textAlign: "center", margin: "0", fontSize: "1.8em", color: "white" }}>
+      <h1 style={{ textAlign: "center", margin: "0", fontSize: "1.8em", color: "white" }}>
         Expense Tracker
-      </h3>
+      </h1>
       <div
         className="expense-wrapper"
         style={{

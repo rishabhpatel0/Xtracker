@@ -42,10 +42,11 @@ export default function AddExpense({ setExpensePopUp, setData, balance, setBalan
         fontFamily: 'Arial, sans-serif',
       }}
     >
-      <h3 style={{ marginBottom: '20px', color: '#495057' }}>Add Expense</h3>
+      <h3 style={{ marginBottom: '20px', color: '#495057' }}>Add Expenses</h3>
       <input
         type="text"
-        placeholder="Expense Name"
+        placeholder="Title"
+        name="title"
         value={name}
         onChange={(e) => setName(e.target.value)}
         style={{
@@ -59,7 +60,8 @@ export default function AddExpense({ setExpensePopUp, setData, balance, setBalan
       />
       <input
         type="number"
-        placeholder="Amount"
+        name="price"
+        placeholder="Price"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
         style={{
@@ -74,6 +76,8 @@ export default function AddExpense({ setExpensePopUp, setData, balance, setBalan
       <select
         value={category}
         onChange={(e) => setCategory(e.target.value)}
+        name="category"
+        // placeholder="set category"
         style={{
           marginBottom: '15px',
           padding: '10px',
@@ -90,6 +94,7 @@ export default function AddExpense({ setExpensePopUp, setData, balance, setBalan
       <input
         type="date"
         value={date}
+        name="date"
         onChange={(e) => setDate(e.target.value)}
         style={{
           marginBottom: '15px',
@@ -114,7 +119,7 @@ export default function AddExpense({ setExpensePopUp, setData, balance, setBalan
             width: '48%', // Adjust for smaller screens
           }}
         >
-          Add
+          Add Expense
         </button>
         <button
           onClick={() => setExpensePopUp(false)}
