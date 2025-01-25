@@ -5,9 +5,9 @@ const COLORS = ['#FFB6C1', '#ADD8E6', '#90EE90'];
 const RADIAN = Math.PI / 180;
 
 const DEFAULT_CATEGORIES = [
-    { name: 'Entertainment', value: 0 },
     { name: 'Food', value: 0 },
-    { name: 'Traveling', value: 0 },
+    { name: 'Entertainment', value: 0 },
+    { name: 'Travel', value: 0 },
 ];
 
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {

@@ -83,7 +83,7 @@ const EditTransactionForm = ({ transaction, onSave, onCancel }) => {
       >
         <option value="Food">Food</option>
         <option value="Entertainment">Entertainment</option>
-        <option value="Traveling">Traveling</option>
+        <option value="Travel">Travel</option>
       </select>
 
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
