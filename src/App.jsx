@@ -8,7 +8,7 @@ import AddBalanceCard from "./AddBalanceCard.jsx";
 import AddExpense from "./AddExpense";
 import EditTransactionForm from "./EditTransactionForm";
 import "./Buttons.css";
-import "./App.css";
+// import "./App.css";
 import "./mobileView.css";
 
 function App() {
