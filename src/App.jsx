@@ -85,7 +85,7 @@ function App() {
           <Expense setExpensePopUp={setIsOpen} category={"Wallet Balance"} income={"Income"} spend={balance} />
         </div>
         <div className="expense-card" style={{ flex: 1 }}>
-          <Expense setExpensePopUp={setExpensePopUp} category={"Expense"} income={"TopExpensesCard"} spend={totalAmount} />
+          <Expense setExpensePopUp={setExpensePopUp} category={"Expenses"} income={"Expense"} spend={totalAmount} />
         </div>
 
         <div className="chart-card" style={{ flex: 1 }}>
