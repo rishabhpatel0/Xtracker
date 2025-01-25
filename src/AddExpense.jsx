@@ -14,7 +14,7 @@ export default function AddExpense({ setExpensePopUp, setData, balance, setBalan
       const newExpense = { name, amount: parseFloat(amount), category, date };
       setData((prev) => {
         const updatedData = [...prev, newExpense];
-        localStorage.setItem('expensesData', JSON.stringify(updatedData));
+        localStorage.setItem('expense', JSON.stringify(updatedData));
         return updatedData;
       });
       setExpensePopUp(false);

@@ -20,7 +20,7 @@ function App() {
   const [editingTransaction, setEditingTransaction] = useState(null); // Track the transaction being edited
 
   useEffect(() => {
-    const storedData = localStorage.getItem("expensesData");
+    const storedData = localStorage.getItem("expense");
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       setData(parsedData);
@@ -40,7 +40,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("expensesData", JSON.stringify(data));
+    localStorage.setItem("expense", JSON.stringify(data));
     const total = data.reduce((sum, expense) => sum + expense.amount, 0);
     setTotalAmount(total);
     localStorage.setItem("walletBalance", String(balance));
@@ -136,7 +136,7 @@ function App() {
               width: "300px",
             }}
           >
-            <AddBalanceCard setIsOpen={setIsOpen} setData={setData} balance={balance} setBalance={setBalance} />
+            <AddBalanceCard setIsOpen={setIsOpen}  setBalance={setBalance} />
           </div>
         </div>
       )}

@@ -28,7 +28,7 @@ const TransactionCard = ({ data, setData,onDelete, onEdit }) => {
     const globalIndex = indexOfFirstItem + index; // Adjust for the current page
     updatedData.splice(globalIndex, 1); // Remove the item at the correct index
     setData(updatedData); // Update state
-    localStorage.setItem("expensesData", JSON.stringify(updatedData)); // Update localStorage
+    localStorage.setItem("expense", JSON.stringify(updatedData)); // Update localStorage
   };
 
   return (
