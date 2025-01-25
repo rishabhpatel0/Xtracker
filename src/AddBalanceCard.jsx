@@ -30,7 +30,7 @@ const AddBalanceCard = ({ setIsOpen, setBalance }) => {
       <h3>Add Balance</h3>
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
+          type="number"
           value={income}
           placeholder="Income Amount"
           onChange={(e) => setIncome(e.target.value)}
